@@ -1,0 +1,9 @@
+[Unit]
+Description=Redfish Listener
+
+[Service]
+ExecStart=/usr/bin/redfish_listener -p 443 -ip 164.10.10.10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
